@@ -88,7 +88,7 @@ public class QueryEngine {
             while (inputScanner.hasNextLine()) {
                 String line = inputScanner.nextLine();
                 String docIdSubstring = line.substring(0, line.indexOf(" ")).trim();	// Gets the document name e.g. Doc1, Doc100
-                String textSubstring = line.substring(4, line.length()).trim();			// Gets the sentence post document name
+                String textSubstring = line.substring(line.indexOf(" ") + 1, line.length()).trim();	// Gets the sentence post document name
                 addDoc(w, textSubstring, docIdSubstring);								// Adds the parsed document
             }
             inputScanner.close();									// Closes the input scanner as the file is read
