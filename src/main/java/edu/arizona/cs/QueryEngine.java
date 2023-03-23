@@ -49,8 +49,17 @@ import org.apache.lucene.util.BytesRef;
  * Task 2: Input Requirement
  * The input.txt file containing the corpus
  *
- * Class Methods:
- *
+ * Private Class Methods:
+ * buildIndex()
+ * cleanDirectory()
+ * addDoc()
+ * Public Class Methods:
+ * parseQuery()
+ * runQ1_1()
+ * runQ1_2_a()
+ * runQ1_2_b()
+ * runQ1_2_c()
+ * runQ1_3()
  **/
 public class QueryEngine {
     boolean indexExists = false;									// If Index exists, it won't be rebuilt it
