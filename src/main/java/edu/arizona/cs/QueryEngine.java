@@ -289,7 +289,7 @@ public class QueryEngine {
         if(!indexExists) {
             buildIndex();
         }
-        String queryStr = "\"" + String.join(" AND ", query) + "\"~1";
+        String queryStr = "\"" + String.join(" ", query) + "\"~1";
         return parseQuery(queryStr, false);
     }
 
